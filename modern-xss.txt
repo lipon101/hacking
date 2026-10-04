@@ -1,0 +1,11 @@
+<script>
+    delete/delete; //alert(1)
+    typeof/typeof; //alert(2)
+    void/void;     //alert(3)
+    throw/throw;   //alert(4)
+</script>
+
+<script>delete/delete; //alert(1)</script>
+<script>typeof/typeof; //alert(2)</script>
+<script>void/void;     //alert(3)</script>
+<script>throw/throw;   //alert(4)</script>
